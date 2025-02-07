@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дизайн-студия Магвай - креативный продакшн</title>
+    <meta
+      name="description"
+      content="Дизайн-студия Магвай - исследования, креативный дизайн, умный дизайн"
+    />
+    <link rel="stylesheet" href="./public/style/css/style.css" />
+    <link rel="stylesheet" href="./public/fonts/montserrat/stylesheet.css" />
+    <link rel="stylesheet" href="./public/fonts/mulish/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="haeder__container-wrapper">
+        <div class="container">
+          <div class="header__hamburger">
+            <span class="header__hamburger-item"></span>
+            <span class="header__hamburger-item"></span>
+            <span class="header__hamburger-item"></span>
+          </div>
+
+          <a class="header__logo-link" href="https://magwai.ru/">
+            <img
+              class="header__logo-img"
+              src="./public/icons/logo.png"
+              alt="логотип"
+          /></a>
+
+          <div class="header__wrapper">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Услуги</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Абонементы</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Почему мы</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Оборудование</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Акции</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">FAQ</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="/" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <a href="tel:+" class="header__contacts-tel"
+                ><img
+                  class="header__contacts-tel__img"
+                  src="./public/icons/carbon_phone-filled.svg"
+                  alt="phone"
+              /></a>
+              <button class="header__contacts-call btn record">
+                <span class="header__contacts-call__text btn__text">
+                  ОСТАВИТЬ ЗАЯВКУ</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <img
+          class="banner__background"
+          src="./public/img/background.png"
+          alt="баннер"
+        />
+        <div class="container">
+          <div class="banner__content">
+            <h1 class="banner__title title">Полет Илона Маска и DOGIE COIN</h1>
+            <p class="banner__text">
+              В прошлый четверг все офигели от полета DOGIE COIN на марс.
+            </p>
+            <button class="banner__btn btn record">
+              <span class="banner__btn-text btn__text">ОСТАВИТЬ ЗАЯВКУ</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="container">
+          <h2 class="cards__title title">Карточки</h2>
+          <div class="cards__wrapper">
+           
+          </div>
+          <button class="cards__btn btn">
+            <span class="btn__text">ЗАГРУЗИТЬ ЕЩЕ</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="popup__overlay">
+      <div class="popup__wrapper">
+        <p class="popup__text">Оставьте заявку и наш менеджер Вам перезвонит</p>
+        <form class="popup__form">
+          <input class="popup__input" type="text" name="user_name" placeholder="Имя">
+          <input class="popup__input" type="tel" name="user_tel" placeholder="Телефон">
+          <input class="popup__input" type="email" name="user_email" placeholder="E-mail">
+          
+        </form>
+        <a href="/">Политика конфиденциальности </a>
+      </div>
+    </div>
+    <script src="./public/scripts/main.js"></script>
+  </body>
+</html>

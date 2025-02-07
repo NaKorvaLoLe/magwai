@@ -1,0 +1,134 @@
+.cards {
+  padding: 132px 0;
+  &__wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    width: calc(100% / 5 - 24px);
+    background-color: $white-color;
+    &-img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+    }
+    &-content {
+      padding: 24px 24px 28px 24px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-tag {
+      font-family: "Mulish", sans-serif;
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    &-name {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &-text {
+      margin: 20px 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      line-clamp: 6;
+      -webkit-box-orient: vertical;
+      color: $gray-color;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &-posted {
+      font-size: 12px;
+      line-height: 24px;
+      color: $gray-color;
+      &__name {
+        font-weight: 700;
+      }
+    }
+    &-link{
+        margin-top: 24px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-color;
+        color: $white-color;
+        font-family: "Mulish", sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 17.57px;
+        font-weight: 600;
+    }
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 62px;
+    width: 254px;
+    height: 58px;
+  }
+}
+
+
+
+@media screen and (max-width: 1600px){
+    .cards{
+        &__item{
+            width: calc(100%/4 - 23px);
+        }
+
+    }
+}
+@media screen and (max-width: 1300px){
+    .cards{
+        
+        .container{
+            padding: 0 40px;
+        }
+        &__wrapper{
+            gap: 20px;
+        }
+        &__item{
+            width: calc(100%/3 - 14px);
+        }
+
+    }
+}
+@media screen and (max-width: 991px){
+    .cards{
+        padding: 45px 0;
+        & .container{
+            padding: 0 15px;
+        }
+        &__wrapper{
+            margin-top: 40px;
+        }
+        &__item{
+            width: calc(100%/2 - 10px);
+        }
+
+    }
+}
+@media screen and (max-width: 767px){
+    .cards{
+        &__wrapper{
+            margin-top: 30px;
+        }
+        &__item{
+            width: 100%;
+        }
+        &__btn{
+            margin-top: 40px;
+        }
+
+    }
+}
